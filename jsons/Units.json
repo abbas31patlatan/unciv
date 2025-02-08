@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Kemankeş",
+    "unitType": "Archery",
+    "uniqueTo": "Ottoman Empire",
+    "replaces": "Archer",
+    "strength": 8,
+    "rangedStrength": 11,
+    "range": 2,
+    "movement": 1,
+    "cost": 40,
+    "requiredTech": "Archery",
+    "upgradesTo": "Composite Bowman",
+    "promotions": ["Extended Range"],
+    "attackSound": "bow"
+  },
+  {
+    "name": "Yeniçeri",
+    "unitType": "Ranged",
+    "uniqueTo": "Ottoman Empire",
+    "replaces": "Swordsman",
+    "strength": 15,
+    "rangedStrength": 17,
+    "range": 2,
+    "movement": 2,
+    "cost": 75,
+    "requiredTech": ["Iron Working", "Archery"],
+    "promotions": ["Cover", "Heals Faster"],
+    "uniques": [
+      "+15% Combat Strength when attacking cities",
+      "Heals +50% faster in friendly territory"
+    ],
+    "attackSound": "sword"
+  },
+  {
+    "name": "Akıncı",
+    "unitType": "Mounted",
+    "uniqueTo": "Ottoman Empire",
+    "replaces": "Horseman",
+    "strength": 14,
+    "movement": 5,
+    "cost": 80,
+    "requiredTech": "Horseback Riding",
+    "promotions": ["Raid", "Finishing Blow"],
+    "uniques": [
+      "Can move after attacking",
+      "+15% Combat Strength when attacking cities",
+      "+30% Combat Strength against wounded units",
+      "Deals -60% damage to fortified units"
+    ],
+    "attackSound": "horse"
+  },
+  {
+    "name": "Tımarlı Sipahi",
+    "unitType": "Mounted",
+    "uniqueTo": "Ottoman Empire",
+    "replaces": "Knight",
+    "strength": 15,
+    "movement": 4,
+    "cost": 120,
+    "requiredTech": "Chivalry",
+    "requiredResource": "Horses",
+    "promotions": ["Timarli Sipahi Bonus", "Finishing Blow"],
+    "uniques": [
+      "Gains +2 Movement for 2 turns after killing an enemy unit",
+      "Takes -15% damage from ranged attacks"
+    ],
+    "attackSound": "horse"
+  },
+  {
+    "name": "Pasha",
+    "unitType": "Civilian",
+    "uniqueTo": "Ottoman Empire",
+    "replaces": "Great General",
+    "strength": 19,
+    "movement": 5,
+    "cost": 170,
+    "requiredTech": "Iron Working",
+    "requiredResource": "Horses",
+    "uniques": [
+      "+5% Combat Strength to all units within 3 tiles",
+      "Heals +5 HP per turn to all units within 3 tiles",
+      "Can construct a Citadel",
+      "Grants +1 Movement to all units within 1 tile"
+    ],
+    "attackSound": "sword"
+  }
+]

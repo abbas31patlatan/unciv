@@ -1,0 +1,47 @@
+{
+  "name": "Ottoman Empire",
+  "leaderName": "Suleiman",
+  "adjective": "Ottoman",
+  "startBias": ["Hill", "Coast"],
+  "preferredVictoryType": "Domination",
+  "personality": "Expansionist",
+  
+  "startIntroPart1": "Hail, Sultan Suleiman the Magnificent! The Ottoman Empire, a bridge between East and West, stretches its mighty arms across continents. With unmatched military discipline, grand architecture, and a legacy of conquest, your Janissaries and Sipahis have forged an empire that commands respect and fear.",
+  "startIntroPart2": "Will you expand your domains further, Sultan? Will the crescent banner flutter over new horizons?",
+  
+  "declaringWar": "The sword of Osman demands your submission.",
+  "attacked": "You dare challenge the Sublime Porte?",
+  "defeated": "The empire falters... but our legacy endures.",
+  "introduction": "Greetings from the Ottoman Empire.",
+  "neutralHello": "State your business.",
+  "hateHello": "You test our patience.",
+  "tradeRequest": "The Ottoman markets are open for negotiation.",
+  
+  "outerColor": [0, 100, 0],
+  "innerColor": [255, 215, 0],
+  "favoredReligion": "Islam",
+  
+  "uniqueName": "Anadolu Kapısı",
+  "uniques": [
+    "Gain +50% Strength and +100% Gold when attacking Barbarian Camps",
+    "Akıncı units create a Settler at the location of a Barbarian Camp upon capture (30% chance)",
+    "Capital starts with +50 HP and +5 Strength",
+    "Capital has -2 Gold maintenance cost",
+    "Units in the capital heal +50% faster",
+    "Units attacking from a Fort or Citadel deal +20% damage",
+    "Cannot train Great Generals",
+    "Can train Pasha. Pasha can heal adjacent units by +10 HP per turn. Pasha has +1 Movement",
+    "Ottoman units within 1 tile of each other receive -15% damage taken and +15% damage dealt",
+    "Ottoman units within 2 tiles of each other receive -10% damage taken and +5% damage dealt",
+    "Ottoman units alone receive -25% defense and -15% attack",
+    "On capturing a city, gain +50 Gold",
+    "Janissary units ignore terrain defensive bonuses and gain +10% combat bonus when attacking fortified cities",
+    "Gain +20% Gold from Trade Routes",
+    "Anadolu Kapısı is a unique building available in the capital. It provides +2 Culture and +1 Gold per turn. It also grants +20% defense for Ottoman units when stationed in the city.",
+    "Ayasofya Mosque can be built in the capital. Once built, it grants the ability to choose a religion and provides +1 Gold per turn for each city that follows the selected religion."
+  ],
+  
+  "cities": ["Istanbul", "Edirne", "Bursa", "Ankara", "Izmir", "Konya", "Trabzon", "Antalya", "Sofia", "Belgrade", "Baghdad", "Cairo", "Damascus", "Mecca", "Sarajevo", "Algiers", "Skopje", "Tunis", "Yerevan"],
+  
+  "spyNames": ["Berat", "Selim", "Orhan", "Fatima", "Mehmed", "Leyla", "Kemal", "Aisha"]
+}

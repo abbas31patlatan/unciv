@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Timarli Sipahi",
+    "unitType": "Mounted",
+    "uniques": [
+      "Gains +2 Movement for 2 turns after killing an enemy unit",
+      "Takes -15% damage from ranged attacks"
+    ]
+  },
+  {
+    "name": "Homeland Devotion",
+    "uniqueTo": "Ottoman Empire",
+    "uniques": [
+      "Heals +50% faster in friendly territory"
+    ]
+  },
+  {
+    "name": "Master of Conquest",
+    "uniques": [
+      "Gains +15% Combat Strength when attacking cities"
+    ]
+  },
+  {
+    "name": "Finishing Blow",
+    "uniques": [
+      "Gains +30% Combat Strength against wounded units"
+    ]
+  }
+]
