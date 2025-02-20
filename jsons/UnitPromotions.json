@@ -1,4 +1,31 @@
 [
+
+        {
+
+	              	"name": "Mateship", 
+          
+	               	"uniques": ["[+20]% Strength bonus for [Melee] units within [2] tiles"],
+
+        },
+
+        {
+
+		"name": "Alpine Infantry Ability",
+
+		"uniques": ["Ignores terrain cost <in [Hill] tiles>"],
+
+	},
+
+        {
+
+	              	"name": "Serbian Unity", 
+          
+	               	"uniques": ["[+15]% Strength bonus for [All] units within [2] tiles"],
+
+        },
+
+]
+[
   {
     "name": "Timarli Sipahi",
     "unitType": "Mounted",

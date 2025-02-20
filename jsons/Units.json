@@ -1,31 +1,677 @@
 [
   {
+    "name": "Pickelhaube Infantry",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The German Empire",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 60,
+    "cost": 350,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+30]% Strength <when fighting in [Trench Line] tiles>"
+    ],
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "'Courage, heroism, does it really exist? I am about to doubt it, since I haven't seen anything else than fear, anxiety , and despair in every face during the battle.' -Dominik Richert, 1914."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Soixante-Quinze",
+    "unitType": "Siege",
+    "range": 2,
+    "uniqueTo": "The French Republic",
+    "replaces": "Artillery",
+    "movement": 2,
+    "strength": 23,
+    "rangedStrength": 40,
+    "cost": 375,
+    "requiredTech": "Dynamite",
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Rocket Artillery",
+    "civilopediaText": [
+      {
+        "text": "At the opening of World War I, the French Army had about 4,000 of these field guns in service. By the end of the war about 12,000 had been produced."
+      }
+    ]
+  },
+  {
+    "name": "Raider",
+    "unitType": "Light Infantry",
+    "movement": 3,
+    "strength": 60,
+    "cost": 360,
+    "requiredTech": "Ballistics",
+    "uniques": [
+      "Can move after attacking"
+    ],
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Marine",
+    "civilopediaText": [
+      {
+        "text": "There was always a risk that returning raiders could be shot in so-called friendly fire incidents. Therefore, it was standard procedure to notify sentries along the line whenever raiding parties were sent out."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Sturmtruppen",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The German Empire",
+    "replaces": "Raider",
+    "movement": 3,
+    "strength": 65,
+    "cost": 400,
+    "requiredTech": "Ballistics",
+    "uniques": [
+      "Can move after attacking"
+    ],
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Marine",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Iron Duke",
+    "unitType": "Melee Water",
+    "uniqueTo": "The British Empire",
+    "replaces": "Destroyer",
+    "movement": 7,
+    "strength": 65,
+    "rangedStrength": 75,
+    "range": 3,
+    "cost": 425,
+    "requiredTech": "Combustion",
+    "requiredResource": "Oil",
+    "uniques": [
+      "Can see invisible Submarine units",
+      "[40]% chance to intercept air attacks",
+      "Withdraws before melee combat <with [80]% chance>",
+      "+100% strength vs Submarine units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "HMS Iron Duke was a dreadnought battleship of the Royal Navy, the lead ship of her class, named in honour of Arthur Wellesley. The 'Iron Duke' was built in Portsmouth Dockyard during 1912, and being scrapped in the late 1940s."
+      }
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Schützengrabeninfanterie",
+    "unitType": "Gunpowder",
+    "uniqueTo": "Austria-Hungary",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 45,
+    "cost": 325,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "The joint 'Imperial and Royal Army' was generally poorly trained and had very limited access to new equipment, because the governments of the Austrian and Hungarian parts of the empire often preferred to generously fund their own units instead of outfitting all three army branches equally."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Tsar Tank",
+    "unitType": "Armored",
+    "uniqueTo": "The Russian Empire",
+    "replaces": "Landship",
+    "movement": 5,
+    "strength": 50,
+    "cost": 380,
+    "requiredTech": "Combustion",
+    "requiredResource": "Oil",
+    "uniques": [
+      "Can see over obstacles"
+    ],
+    "obsoleteTech": "Combined Arms",
+    "upgradesTo": "Tank",
+    "civilopediaText": [
+      {
+        "text": "The Tsar Tank was a Russian armoured vehicle developed by Nikolai Lebedenko, Nikolay Yegorovich Zhukovsky, Boris Stechkin, and Alexander Mikulin from 1914 onwards. The project was cancelled in 1915 after initial tests deemed the vehicle to be underpowered and vulnerable to artillery fire."
+      }
+    ],
+    "attackSound": "tankshot"
+  },
+  {
+    "name": "Müsellems",
+    "unitType": "Mounted",
+    "uniqueTo": "The Ottoman Empire",
+    "replaces": "Armored",
+    "movement": 3,
+    "strength": 16,
+    "cost": 120,
+    "requiredTech": "Military Science",
+    "upgradesTo": "Iron Working",
+    "requiredResource": "Iron",
+    "uniques": [
+      "Gain [10] [Gold] <when attacking>",
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "-33% strength vs cities when attacking"
+    ],
+    "obsoleteTech": "Combustion",
+    "civilopediaText": [
+      {
+        "text": "The cavalry made up 15 percent of the Ottoman Army in terms of manpower. There were three kinds of cavalry: light cavalry, field cavalry and heavy cavalry."
+      }
+    ]
+  },
+  {
+    "name": "Schneider Cannon",
+    "unitType": "Siege",
+    "uniqueTo": "The Kingdom of Bulgaria",
+    "replaces": "Artillery",
+    "movement": 3,
+    "strength": 20,
+    "rangedStrength": 25,
+    "range": 2,
+    "cost": 330,
+    "requiredTech": "Dynamite",
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Rocket Artillery",
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Jeffery Armored Car",
+    "unitType": "Armored",
+    "uniqueTo": "The United States",
+    "replaces": "Landship",
+    "movement": 5,
+    "strength": 50,
+    "cost": 365,
+    "requiredTech": "Combustion",
+    "requiredResource": "Oil",
+    "uniques": [
+      "[+30]% Strength <when adjacent to a [Melee] unit>"
+    ],
+    "obsoleteTech": "Combined Arms",
+    "upgradesTo": "Tank",
+    "civilopediaText": [
+      {
+        "text": "The Jeffery armored car was an armored car developed by the US and Canada. It saw heavy use in World War I. The armored car No.1 was used in General John Pershing’s 1916 Pancho Villa Expedition in Columbus, New Mexico for training. Pancho Villa was far into Mexico at that time and there are no records on its use in fighting."
+      }
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Digger",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Commonwealth of Australia",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 350,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "promotions": [
+      "Mateship",
+      "Survivalism I"
+    ],
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "Diggers, which are also know as the ANZACs, is an army corps made of of troops from Australia and New Zealand during WW1. The ANZACs were also refromed due to the start of WW2, and even the Vietnam War."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Alpini",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Kingdom of Italy",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 330,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "promotions": [
+      "Alpine Infantry Ability"
+    ],
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "The Alpini were founded in 1872 and their mission was to protect Italy's northern mountain border with France and Austria-Hungary. They were trained in mountain warfare and based in locations along the Alps."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Light Artillery",
+    "unitType": "Siege",
+    "uniqueTo": "The Kingdom of Belgium",
+    "replaces": "Artillery",
+    "movement": 3,
+    "strength": 15,
+    "rangedStrength": 15,
+    "range": 1,
+    "cost": 320,
+    "hurryCostModifier": 120,
+    "requiredTech": "Dynamite",
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Rocket Artillery",
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Bicycle Infantry",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The British Raj",
+    "replaces": "Great War Infantry",
+    "movement": 3,
+    "strength": 55,
+    "cost": 190,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "Bicycle infantry are infantry soldiers who maneuver on (or, more often, between) battlefields using military bicycles. The term dates from the late 19th century, when the 'safety bicycle' became popular in Europe, the United States, and Australia. Historically, bicycles lessened the need for horses, fuel and vehicle maintenance. Though their use has waned over the years in many armies, they continue to be used in unconventional armies such as militias."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Mortar",
+    "unitType": "Light Siege",
+    "movement": 2,
+    "strength": 20,
+    "rangedStrength": 30,
+    "range": 2,
+    "cost": 320,
+    "requiredTech": "Dynamite",
+    "uniques": [
+      "[+100]% strength vs cities when attacking"
+    ],
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Modern Mortar",
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Modern Mortar",
+    "unitType": "Light Siege",
+    "movement": 2,
+    "strength": 30,
+    "rangedStrength": 40,
+    "range": 3,
+    "cost": 380,
+    "requiredTech": "Rocketry",
+    "uniques": [
+      "[+100]% strength vs cities when attacking"
+    ],
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Great War Machine Gun",
+    "unitType": "Ranged Gunpowder",
+    "movement": 2,
+    "strength": 60,
+    "rangedStrength": 65,
+    "range": 1,
+    "cost": 280,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Ballistics",
+    "uniques": [
+      "[+75]% strength when defending"
+    ],
+    "upgradesTo": "Machine Gun",
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Changing Battle Tactics with the Introduction of the Machine Gun. The earliest, most primitive renditions of the machine gun worked entirely from a hand crank but by the ending of World War I in 1918, the machine gun was entirely automatic and was capable of producing an output of up to 600 rounds per minute."
+      }
+    ]
+  },
+  {
+    "name": "Draftee",
+    "unitType": "Light Infantry",
+    "movement": 2,
+    "strength": 40,
+    "cost": 200,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Ballistics",
+    "upgradesTo": "Raider",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Carbonário",
+    "unitType": "Light Infantry",
+    "uniqueTo": "The First Portuguese Republic",
+    "replaces": "Draftee",
+    "movement": 2,
+    "strength": 40,
+    "cost": 180,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Ballistics",
+    "upgradesTo": "Raider",
+    "uniques": [
+      "May enter foreign tiles without open borders",
+      "Invisible to non-adjacent units"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Canadian Expeditionary Force",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Dominion of Canada",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 60,
+    "cost": 290,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+30]% Strength <when attacking> <in [Trench Line] tiles>"
+    ],
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "After extensive experience and success in battle from the Second Battle of Ypres, through the Somme and particularly in the Battle of Arras at Vimy Ridge in April 1917, and Passchendaele the Canadian Corps came to be regarded as an exceptional force by both Allied and German military commanders. The Canadian Expeditionary Force was active from 1914 to 1919."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "NZ Digger",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Dominion of New Zealand",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 350,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "promotions": [
+      "Mateship",
+      "Haka War Dance"
+    ],
+    "upgradesTo": "Infantry",
+    "civilopediaText": [
+      {
+        "text": "Diggers, which are also know as the ANZACs, is an army corps made of of troops from Australia and New Zealand during WW1. The ANZACs were also refromed due to the start of WW2, and even the Vietnam War."
+      }
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Romanian Volunteer Corps",
+    "unitType": "Light Infantry",
+    "uniqueTo": "The Kingdom of Romania",
+    "replaces": "Draftee",
+    "movement": 2,
+    "strength": 40,
+    "cost": 130,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Rocketry",
+    "upgradesTo": "Raider",
+    "uniques": [
+      "[+30]% strength when defending"
+    ],
+    "civilopediaText": [
+      {
+        "text": "'Romanians! The war which for the last two years has been encircling our frontiers more and more closely has shaken the ancient foundations of Europe to their depths. It has brought the day which has been awaited for centuries by the national conscience, by the founders of the Romanian State, by those who united the principalities in the war of independence, by those responsible for the national renaissance.' -Proclamation by King Ferdinand."
+      }
+    ]
+  },
+  {
+    "name": "Banzai Infantry",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Empire of Japan",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 55,
+    "cost": 330,
+    "requiredTech": "Replaceable Parts",
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry",
+    "promotions": [
+      "Shock I"
+    ]
+  },
+  {
+    "name": "Greek Expeditionary Force",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Kingdom of Greece",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 60,
+    "cost": 330,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+20]% Strength <in [Foreign] tiles>"
+    ],
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry"
+  },
+  {
+    "name": "Foreign Legion",
+    "unitType": "Gunpowder",
+    "replaces": "Great War Infantry",
+    "uniqueTo": "The French Republic",
+    "movement": 2,
+    "strength": 50,
+    "cost": 320,
+    "requiredTech": "Replaceable Parts",
+    "upgradesTo": "Infantry",
+    "obsoleteTech": "Plastics",
+    "uniques": [
+      "[+20]% Strength <when fighting in [Foreign Land] tiles>"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "British Infantry",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The British Empire",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 350,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+20]% Strength <when fighting in [Water] tiles>"
+    ],
+    "attackSound": "shot",
+    "obsoleteTech": "Plastics",
+    "upgradesTo": "Infantry"
+  },
+  {
+    "name": "Minas Geraes",
+    "unitType": "Ranged Water",
+    "uniqueTo": "The Republic of Brazil",
+    "replaces": "Battleship",
+    "movement": 5,
+    "strength": 65,
+    "rangedStrength": 70,
+    "range": 3,
+    "cost": 375,
+    "requiredResource": "Oil",
+    "requiredTech": "Electronics",
+    "uniques": [
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Serbian First Army",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Kingdom of Serbia",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 360,
+    "requiredTech": "Replaceable Parts",
+    "promotions": [
+      "Serbian Unity"
+    ],
+    "upgradesTo": "Infantry",
+    "obsoleteTech": "Plastics",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Greatcoat",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Russian Empire",
+    "replaces": "Great War Infantry",
+    "movement": 2,
+    "strength": 50,
+    "cost": 320,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+40]% Strength <when fighting in [Tundra] tiles>",
+      "[+10]% Strength <when fighting in [Snow] tiles>"
+    ],
+    "upgradesTo": "Infantry",
+    "obsoleteTech": "Plastics",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Fedayi",
+    "unitType": "Light Infantry",
+    "uniqueTo": "Armenian Resistance",
+    "replaces": "Draftee",
+    "movement": 2,
+    "strength": 40,
+    "cost": 200,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "[+50]% Strength <when fighting in [Friendly Land] tiles>"
+    ],
+    "upgradesTo": "Raider",
+    "obsoleteTech": "Ballistics",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Siamese Expeditionary Forces",
+    "unitType": "Gunpowder",
+    "uniqueTo": "The Kingdom of Siam",
+    "replaces": "Great War Infantry",
+    "movement": 3,
+    "strength": 50,
+    "cost": 370,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+      "All adjacent units heal [6] HP when healing"
+    ],
+    "upgradesTo": "Infantry",
+    "obsoleteTech": "Plastics",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Red Army",
+    "unitType": "Light Infantry",
+    "uniqueTo": "The Red Army",
+    "replaces": "Raider",
+    "movement": 2,
+    "strength": 60,
+    "cost": 210,
+    "requiredTech": "Ballistics",
+    "uniques": [
+      "[+50]% Strength <when fighting in [Friendly Land] tiles>",
+      "Can move after attacking"
+    ],
+    "upgradesTo": "Marine",
+    "obsoleteTech": "Rocketry",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Dreadnought",
+    "unitType": "Ranged Water",
+    "movement": 4,
+    "strength": 80,
+    "rangedStrength": 70,
+    "range": 2,
+    "interceptRange": 2,
+    "cost": 700,
+    "requiredTech": "Combustion",
+    "uniques": [
+      "Can see invisible [Submarine] units",
+      "[40]% chance to intercept air attacks",
+      "Withdraws before melee combat <with [50]% chance>",
+      "[+100]% Strength <vs [Submarine] units>"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Gatling Gun",
+    "unitType": "Ranged Gunpowder",
+    "range": 1,
+    "movement": 2,
+    "strength": 30,
+    "rangedStrength": 30,
+    "cost": 225,
+    "requiredTech": "Industrialization",
+    "upgradesTo": "Machine Gun",
+    "obsoleteTech": "Replaceable Parts",
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Senusite Camel Warrior",
+    "unitType": "Mounted",
+    "uniqueTo": "The Senussi Order",
+    "replaces": "Cavalry",
+    "movement": 4,
+    "strength": 32,
+    "cost": 225,
+    "requiredTech": "Military Science",
+    "obsoleteTech": "Combustion",
+    "requiredResource": "Horses",
+    "upgradesTo": "Landship",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "May heal outside of friendly territory"
+    ],
+    "attackSound": "horse"
+  },
+  {
     "name": "Kemankeş",
     "unitType": "Archery",
-    "uniqueTo": "Ottoman Empire",
+    "uniqueTo": "The Ottoman Empire",
     "replaces": "Archer",
     "strength": 8,
     "rangedStrength": 11,
-    "range": 2,
+    "range": 3,
     "movement": 1,
     "cost": 40,
     "requiredTech": "Archery",
     "upgradesTo": "Composite Bowman",
-    "promotions": ["Extended Range"],
+    "promotions": [
+      "Extended Range"
+    ],
     "attackSound": "bow"
   },
   {
     "name": "Yeniçeri",
     "unitType": "Ranged",
-    "uniqueTo": "Ottoman Empire",
+    "uniqueTo": "The Ottoman Empire",
     "replaces": "Swordsman",
     "strength": 15,
     "rangedStrength": 17,
     "range": 2,
     "movement": 2,
     "cost": 75,
-    "requiredTech": ["Iron Working", "Archery"],
-    "promotions": ["Cover", "Heals Faster"],
+    "requiredTech": [
+      "Iron Working",
+      "Archery"
+    ],
+    "promotions": [
+      "Cover",
+      "Heals Faster"
+    ],
     "uniques": [
       "+15% Combat Strength when attacking cities",
       "Heals +50% faster in friendly territory"
@@ -35,13 +681,16 @@
   {
     "name": "Akıncı",
     "unitType": "Mounted",
-    "uniqueTo": "Ottoman Empire",
+    "uniqueTo": "The Ottoman Empire",
     "replaces": "Horseman",
     "strength": 14,
-    "movement": 5,
+    "movement": 4,
     "cost": 80,
     "requiredTech": "Horseback Riding",
-    "promotions": ["Raid", "Finishing Blow"],
+    "promotions": [
+      "Raid",
+      "Finishing Blow"
+    ],
     "uniques": [
       "Can move after attacking",
       "+15% Combat Strength when attacking cities",
@@ -53,14 +702,17 @@
   {
     "name": "Tımarlı Sipahi",
     "unitType": "Mounted",
-    "uniqueTo": "Ottoman Empire",
+    "uniqueTo": "The Ottoman Empire",
     "replaces": "Knight",
-    "strength": 15,
-    "movement": 4,
+    "strength": 18,
+    "movement": 3,
     "cost": 120,
     "requiredTech": "Chivalry",
     "requiredResource": "Horses",
-    "promotions": ["Timarli Sipahi Bonus", "Finishing Blow"],
+    "promotions": [
+      "Timarli Sipahi Bonus",
+      "Finishing Blow"
+    ],
     "uniques": [
       "Gains +2 Movement for 2 turns after killing an enemy unit",
       "Takes -15% damage from ranged attacks"
@@ -70,7 +722,7 @@
   {
     "name": "Pasha",
     "unitType": "Civilian",
-    "uniqueTo": "Ottoman Empire",
+    "uniqueTo": "The Ottoman Empire",
     "replaces": "Great General",
     "strength": 19,
     "movement": 5,
