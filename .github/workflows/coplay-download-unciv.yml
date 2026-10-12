@@ -1,0 +1,36 @@
+name: Download Unciv for CoPlay
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/coplay-download-unciv.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Download official Unciv 4.22.9 JAR
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p unciv-dist
+          curl --fail --location --show-error --silent \
+            --retry 3 --retry-delay 5 \
+            "https://github.com/yairm210/Unciv/releases/download/4.22.9/Unciv.jar" \
+            --output unciv-dist/Unciv.jar
+          test "$(stat -c %s unciv-dist/Unciv.jar)" -gt 10000000
+          jar tf unciv-dist/Unciv.jar >/dev/null
+          sha256sum unciv-dist/Unciv.jar > unciv-dist/SHA256SUMS
+
+      - name: Store game file as GitHub Actions artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unciv-4.22.9
+          path: unciv-dist/
+          if-no-files-found: error
+          retention-days: 7
