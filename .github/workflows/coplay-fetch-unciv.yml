@@ -1,0 +1,29 @@
+name: CoPlay Unciv binary fetch
+on:
+  push:
+    branches:
+      - coplay-runtime-download
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Download official Unciv desktop JAR
+        run: |
+          curl --fail --location --retry 3 --output Unciv.jar \
+            https://github.com/yairm210/Unciv/releases/download/4.22.9/Unciv.jar
+          test "$(stat -c%s Unciv.jar)" -gt 50000000
+          sha256sum Unciv.jar > Unciv.jar.sha256
+          ls -lh Unciv.jar
+      - name: Keep JAR as GitHub Actions artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unciv-4.22.9-jar
+          path: |
+            Unciv.jar
+            Unciv.jar.sha256
+          retention-days: 3
+          if-no-files-found: error
